@@ -1,64 +1,122 @@
 <!DOCTYPE html>
+<!--   <a href="https://www.flaticon.com/free-icons/support" title="support icons">Support icons created by Freepik - Flaticon</a> -->
+
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <title>Runhao's Personal Site</title>
+  <title>Runhao Huang</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <table cellspacing = "20">
-    <td><img src="runhao.jpeg" alt="Runhao's profile picture" width="200" height="200"></td>
-    <td><h1>Runhao Huang</h1>
-    <p><em>Student at <strong>Wake Forest University</strong>.</em></p>
-    <p>Double majoring in Computer Science and Mathematical Statistics.</p>
-    <p><a href="https://www.linkedin.com/in/runhao-huang-7a8020218/">LinkedIn Profile</a></p>
-    <a href="Contact_Me.html">Contact Me</a></td>
-  </table>
-  <hr>
-  <h3>Programming languages</h3>
-  <ul>
-    <li>Java</li>
-    <li>C++</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>R</li>
-    <li>Racket</li>
-    <li>SQL</li>
-    <li>VBA</li>
-  </ul>
-  <hr>
-  <h3>Platforms</h3>
-  <ol>
-    <li>Intellij</li>
-    <li>Codelite</li>
-    <li>Atom</li>
-    <li>R studio</li>
-    <li>Dr Racket</li>
-  </ol>
-  <hr>
-  <h3>Work Experience</h3>
-  <table cellspacing = "15">
-    <thead>
-      <tr>
-        <th>Dates</th>
-        <th>Work</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Winston-Salem, NC | January 2022 – Present</td>
-        <td>Research mentee in Dr. Devarakonda’s lab</td>
-      </tr>
-      <tr>
-        <td>Kunshan, China | June 2021 – August 2021</td>
-        <td>SDE Intern in Kone Corporation</td>
-      </tr>
-    </tbody>
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud-image">
+    <h1>I'm Runhao.</h1>
+    <h2>a programmer</h2>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-image">
+    <img src="images/mountain.png" alt="mountain-image">
+  </div>
 
-  </table>
+  <div class="middle-container">
+    <div class="profile">
+      <img src="images/runhao.jpeg" alt="profile-picture" width="150px" height="150px">
+      <h2>Hello!</h2>
+      <p class="intro">I'm a student at Wake Forest University.</p>
+      <p class="intro">Double majoring in Computer Science and Mathematical Statistics.</p>
+    </div>
+    <hr>
+    <div class="experience">
+      <h2>Work Experiences</h2>
+      <table cellspacing="15">
+        <thead>
+          <tr>
+            <th>Dates</th>
+            <th>Work</th>
+            <th>Experiences</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td width=200px>Winston-Salem, NC <br> January 2022 – Present</td>
+            <td>Research mentee in Dr. Devarakonda’s lab</td>
+            <td class="experience-detail">
+              <ul>
+                <li>Be awarded the WFU Research Fellowship (The URECA Scholarship) for Summer 2022.</li>
+                <li>Analyzed mentor’s papers about s-step communication avoiding algorithms on LR model in high-speed computing in ML.</li>
+                <li>Learning C++, MPI for parallel processing, and MATLAB for prototyping.</li>
+                <li>Plan to improve s-step algorithm on Kernel LR and tune for training efficiency and accuracy, using datasets in AWS.</li>
+                <li>Plan to reduce recursive solution updates in Kernel LR SGD by using matrix calculations and optimizations.</li>
+                <li>Plan to use Tuning and Analysis Utilities (TAU) to do runtime breakdown analysis for MPI processes.</li>
+                <li>Plan to use Spark/MapReduce in a cloud environment, Amazon EC2, to achieve better speedups over SGD.</li>
+                <li>Target to publish research results in the end of summer 2022.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Kunshan, China <br> June 2021 – August 2021</td>
+            <td>SDE Intern in Kone Corporation</td>
+            <td class="experience-detail">
+              <ul>
+                <li>Designed and developed two file-uploading tools and one product-progress updater tool by SQL and VBA.</li>
+                <li>Improved the efficiency, accuracy of engineering file upload, and provided visualized work summary of teams to leaders.</li>
+                <li>Optimized the code in aspects of Object-Oriented Design, Encapsulation, Polymorphism, and Common interface.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
 
+      </table>
+
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>Programming Languages</h2>
+      <div class="skill-row">
+        <img class="computer-img" src="images/technical-support.png" alt="computer-pic">
+        <ul>
+          <li>Java</li>
+          <li>C++</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>R</li>
+          <li>Racket</li>
+          <li>SQL</li>
+          <li>VBA</li>
+        </ul>
+      </div>
+      <h2>IDEs</h2>
+      <div class="skill-row">
+        <img class="ide-img" src="images/IDE.png" alt="ide-pic">
+        <ul>
+          <li>Intellij</li>
+          <li>Codelite</li>
+          <li>Atom</li>
+          <li>R studio</li>
+          <li>Dr Racket</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>If you want to know more about me.</h3>
+      <p class="contact-message">Looking forward to projects and SDE internships!</p>
+      <a class="btn" href="mailto:huanr20@wfu.edu">CONTACT ME</a>
+    </div>
+  </div>
+
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/runhao-huang-7a8020218/">LinkedIn</a>
+    <a class="footer-link" href="https://github.com/Runhao-Huang">Github</a>
+    <p class="copy-right">© Runhao Huang.</p>
+  </div>
 
 
 </body>
